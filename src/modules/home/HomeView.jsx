@@ -21,7 +21,7 @@ function HomeView() {
   );
 
   return (
-    <div>
+    <div className='app-view'>
       <div>
         <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
@@ -31,14 +31,15 @@ function HomeView() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <hr />
       <button
-        style={{ marginTop: '0.5em' }}
+        style={{ marginBottom: '1rem' }}
+        onClick={() => setCount(count => count + 1)}
+      >
+        {strings('home.countIs', { count })}
+      </button>
+      <hr style={{ width: '300px' }} />
+      <button
+        style={{ marginTop: '1rem' }}
         onClick={async () => {
           await changeLanguage(nextLanguage);
           await dispatch(

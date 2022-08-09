@@ -3,6 +3,10 @@ export default {
     home: 'Home',
   },
 
+  home: {
+    countIs: 'Count is {{count}}',
+  },
+
   language: {
     language: 'Language',
     changeLanguage: 'Change language to {{language}}',

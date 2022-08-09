@@ -3,6 +3,10 @@ export default {
     home: 'Inicio',
   },
 
+  home: {
+    countIs: 'La cuenta es {{count}}',
+  },
+
   language: {
     language: 'Idiomas',
     changeLanguage: 'Cambiar idioma a {{language}}',

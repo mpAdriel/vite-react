@@ -4,10 +4,12 @@
 
 ## 🔥 Usage
 
-- git clone `https://github.com/mpAdriel/vite-react.git`
-- cd `vite-react`
-- npm `install`
-- npm run `dev`
+```sh
+git clone `https://github.com/mpAdriel/vite-react.git`
+cd `vite-react`
+npm `install`
+npm run `dev`
+```
 
 ## 🌈 Features
 
@@ -22,7 +24,7 @@
 - Form Validations
 - Use CSS and SCSS
 
-## 📦Generate build
+## 📦 Generate build
 
 To build development:
 
@@ -97,3 +99,18 @@ npm run preview
   "svg.preview.mode": "svg"
 }
 ```
+
+## 🙌 My extensions vscode
+
+- Aura Theme
+- Better Comments
+- Error Lens
+- ES7 + React/Redux/React-Native snippets
+- ESLint
+- Icons
+- Live Server
+- Prettier - Code formatter
+- Quokka.js
+- SVG
+- Thunder Client
+- XML
