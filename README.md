@@ -5,10 +5,10 @@
 ## 🔥 Usage
 
 ```sh
-git clone `https://github.com/mpAdriel/vite-react.git`
-cd `vite-react`
-npm `install`
-npm run `dev`
+git clone https://github.com/mpAdriel/vite-react.git
+cd vite-react
+npm install
+npm run dev
 ```
 
 ## 🌈 Features
