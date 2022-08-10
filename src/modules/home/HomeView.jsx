@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Button } from '@mui/material';
 
 // actions
 import { setValueApp } from '../../common/redux/modules/app/AppActions';
 // resources
 import { changeLanguage, strings } from '../../common/translations/i18n';
+import { localImg } from '../../../public/assets';
+// logos
 import reactLogo from '../../../public/svg/react.svg';
 import viteLogo from '../../../public/svg/vite.svg';
+import muiLogo from '../../../public/svg/mui.svg';
+// components
+import LinkTool from './components/LinkTool';
 
 function HomeView() {
   const [count, setCount] = useState(0);
@@ -21,25 +27,51 @@ function HomeView() {
   );
 
   return (
-    <div className='app-view'>
-      <div>
-        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://reactjs.org' target='_blank' rel='noreferrer'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
+    <div className='container app-view'>
+      <div className='text-xl font-medium grid-link-tools w-5/6 sm:w-3/4 lg:w-2/3 xl:w-2/5'>
+        <LinkTool
+          href='https://vitejs.dev'
+          src={viteLogo}
+          classNameImg='vite'
+          classNameContainer='items-center'
+          alt='Vite Logo'
+          text='Vite'
+        />
+        <LinkTool
+          href='https://reactjs.org'
+          src={reactLogo}
+          classNameImg='react'
+          classNameContainer='items-center'
+          alt='React Logo'
+          text='React'
+        />
+        <LinkTool
+          href='https://mui.com/'
+          src={muiLogo}
+          classNameImg='mui'
+          classNameContainer='items-center'
+          alt='Material UI Logo'
+          text='Material UI'
+        />
+        <LinkTool
+          href='https://tailwindcss.com/'
+          src={localImg.tailwindcss}
+          classNameImg='tailwindcss'
+          classNameContainer='items-center'
+          alt='TailWindCSS Logo'
+          text='TailWindCSS'
+        />
       </div>
-      <h1>Vite + React</h1>
-      <button
-        style={{ marginBottom: '1rem' }}
+      <Button
+        className='w-4/5 md:w-1/3 mt-10 mb-3'
+        variant='contained'
         onClick={() => setCount(count => count + 1)}
       >
         {strings('home.countIs', { count })}
-      </button>
-      <hr style={{ width: '300px' }} />
-      <button
-        style={{ marginTop: '1rem' }}
+      </Button>
+      <Button
+        className='w-4/5 md:w-1/3'
+        variant='contained'
         onClick={async () => {
           await changeLanguage(nextLanguage);
           await dispatch(
@@ -53,7 +85,7 @@ function HomeView() {
               ? nextLanguageString?.toLowerCase()
               : nextLanguageString,
         })}
-      </button>
+      </Button>
     </div>
   );
 }

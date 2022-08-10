@@ -23,7 +23,7 @@ const AppContainer = () => {
   if (isLoading || isLoadingApp) {
     return (
       <div className='app-view'>
-        <div className='loader'></div>
+        <div className='loader dark'></div>
       </div>
     );
   }
