@@ -28,7 +28,7 @@ function HomeView() {
 
   return (
     <div className='container app-view'>
-      <div className='text-xl font-medium grid-link-tools w-5/6 sm:w-3/4 lg:w-2/3 xl:w-2/5'>
+      <div className='text-xl tracking-wide font-medium grid-link-tools w-5/6 sm:w-3/4 lg:w-2/3 xl:w-1/2'>
         <LinkTool
           href='https://vitejs.dev'
           src={viteLogo}
@@ -59,7 +59,7 @@ function HomeView() {
           classNameImg='tailwindcss'
           classNameContainer='items-center'
           alt='TailWindCSS Logo'
-          text='TailWindCSS'
+          text='tailwindcss'
         />
       </div>
       <Button
