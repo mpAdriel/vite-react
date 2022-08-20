@@ -12,6 +12,11 @@ export default ({ mode, command }) => {
       host: true,
       port: isPro ? 4000 : 3000,
     },
+    resolve: {
+      alias: {
+        '~bootstrap': './node_modules/bootstrap',
+      },
+    },
     plugins: [react()],
     build: {
       outDir: './build',

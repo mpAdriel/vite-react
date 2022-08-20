@@ -1,7 +1,7 @@
-import tailwindcss from './img/tailwindcss.png';
+import bootstrap from './img/bootstrap.png';
 
 const localImg = {
-  tailwindcss,
+  bootstrap,
 };
 
 export { localImg };

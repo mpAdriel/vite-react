@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-app);
 }
 
 .app-view {
@@ -18,6 +19,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  margin-bottom: 2rem;
   &.card {
     width: 100%;
     font-size: clamp(1rem, 2vw, 3rem); 
@@ -39,12 +41,8 @@ a:hover .logo.react {
   filter: drop-shadow(0 0 20px #61dafbaa);
 }
 
-a:hover .logo.mui {
-  filter: drop-shadow(0 0 20px #5670f9);
-}
-
-a:hover .logo.tailwindcss {
-  filter: drop-shadow(0 0 20px #7bb7f4);
+a:hover .logo.bootstrap {
+  filter: drop-shadow(0 0 20px #6f01f0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,4 +64,8 @@ a:hover .logo.tailwindcss {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.shadow-default {
+  box-shadow: var(--boxShadow-default);
 }

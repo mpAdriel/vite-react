@@ -14,7 +14,7 @@ npm run dev
 ## 🌈 Features
 
 - [Vite](https://vitejs.dev/) + [React](https://es.reactjs.org/)
-- [MUI](https://mui.com/) + [tailwindcss](https://tailwindcss.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) (standard)
 - [React Router Dom](https://reactrouter.com/)
 - [Redux](https://es.redux.js.org/)
