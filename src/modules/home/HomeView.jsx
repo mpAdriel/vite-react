@@ -48,16 +48,15 @@ function HomeView() {
           alt='Bootstrap Logo'
           text='Bootstrap'
         />
-      </div>
-      <div className='d-grid gap-2'>
+
         <button
-          className='btn btn-primary'
+          className='btn btn-app'
           onClick={() => setCount(count => count + 1)}
         >
           {strings('home.countIs', { count })}
         </button>
         <button
-          className='btn btn-secondary'
+          className='btn btn-app'
           onClick={async () => {
             await changeLanguage(nextLanguage);
             await dispatch(
