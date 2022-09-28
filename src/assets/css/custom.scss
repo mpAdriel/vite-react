@@ -1,80 +1,3 @@
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background: var(--bg-app);
-}
-
-.app-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 992px;
-}
-
-.grid-link-tools {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-bottom: 2rem;
-  width: 100%;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  &.card {
-    width: 100%;
-    background-color: red !important;
-    font-size: clamp(1rem, 2vw, 3rem); 
-  }
-}
-
-.logo {
-  height: 75px;
-  width: 120px;
-  padding: 0 16px;
-  will-change: filter;
-}
-
-a:hover .logo.vite {
-  filter: drop-shadow(0 0 20px #646cffaa);
-}
-
-a:hover .logo.react {
-  filter: drop-shadow(0 0 20px #61dafbaa);
-}
-
-a:hover .logo.bootstrap {
-  filter: drop-shadow(0 0 20px #6f01f0);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (min-width: 576px) {
-  .grid-link-tools {
-    grid-template-columns: repeat(2, 1fr);
-    width: auto;
-  }
-  
-  .grid-link-tools a:nth-child(3) {
-    grid-column: 1 / 3;
-  }
-}
-
 /* custom app */
 .btn-app {
   background: var(--bg-btn) !important;
@@ -83,7 +6,6 @@ a:hover .logo.bootstrap {
 }
 
 /* shortcuts */
-
 .d-flex-center {
   display: flex;
   justify-content: center;

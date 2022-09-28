@@ -1,7 +1,7 @@
-import bootstrap from './img/bootstrap.png';
+import react from './img/react.png';
 
 const localImg = {
-  bootstrap,
+  react,
 };
 
 export { localImg };

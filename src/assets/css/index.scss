@@ -17,8 +17,8 @@
   -webkit-text-size-adjust: 100%;
 
   /* variables */
-  --bg-app: radial-gradient(#ffffff -50%, #b473ff);
-  --bg-btn: linear-gradient(0deg, #964aec, #6f01f0);
+  --bg-app: radial-gradient(#f0f0f0 -50%, #ffedb1);
+  --bg-btn: linear-gradient(0deg, #f0f0f0, #ffedb1);
   --boxShadow-default: 
     4px 4px 4px rgb(0, 0, 0, 0.25),
     -4px -4px 4px rgb(255, 255, 255, 0.25);
@@ -30,17 +30,28 @@
   box-sizing: border-box;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-app);
+}
+
+.app-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 992px;
+}
+
 a {
   text-decoration: none !important;
-  color: inherit !important;
   &:hover {
     color: inherit;
   }
-}
-
-.card {
-  border-radius: 16px;
-  background-color: rgb(250, 250, 250);
 }
 
 .loader {
